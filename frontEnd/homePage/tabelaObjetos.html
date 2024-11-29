@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Objetos</title>
+    <link rel="stylesheet" href="css/tabelaStyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="./homepage.html" class="no-link-style">Gerenciamento</a></h1>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <a href="./homepage.html" class="search-btn">Inicio</a>
+            <input type="text" id="search-bar" placeholder="Pesquisar..." class="search-bar" oninput="pesquisarFuncionario()">
+            <a href="" class="search-btn">Buscar</a>
+            <a href="./cadastro.html" class="add-link">Cadastrar</a>
+        </div>
+    </section>
+    
+
+    
+
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Contato</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Dados carregados dinamicamente pelo script -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Modal para Visualizar -->
+    <div id="visualizar-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal('visualizar-modal')">&times;</span>
+            <h2>Visualizar Funcionário</h2>
+            <p><strong>Nome:</strong> <span id="visualizar-name"></span></p>
+            <p><strong>Email:</strong> <span id="visualizar-email"></span></p>
+            <p><strong>Contato:</strong> <span id="visualizar-phone"></span></p>
+            <p><strong>Competencias:</strong><span id="visualizar-competence"></span></p>
+            <p><strong>Certificaçao:</strong><span id="visualizar-certification"></span></p>
+            <p><strong>Anos de Experiência:</strong> <span id="visualizar-experienceTime"></span></p>
+            <p><strong>LinkedIn:</strong> <span id="visualizar-linkedinUrl"></span></p>
+        </div>
+    </div>
+
+    <!-- Modal para Editar -->
+    <div id="editar-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal('editar-modal')">&times;</span>
+            <h2>Editar Funcionário</h2><br>
+            <form id="modal-form">
+                <input type="hidden" id="funcionario-id">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+
+                <label for="phone">Contato:</label>
+                <input type="text" id="phone" required><br>
+
+                <label for="competence">Competencia:</label>
+                <input type="text" id="competence" required><br>
+
+                <label for="certification">Certificacao:</label>
+                <input type="text" id="certification" required><br>
+
+                <label for="experienceTime">Anos de Experiência:</label>
+                <input type="text" id="experienceTime" required><br>
+
+                <label for="linkedinUrl">LinkedIn:</label>
+                <input type="url" id="linkedinUrl"><br>
+
+                <br><button type="submit" class="saveEdit-btn">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/tabelascript.js"></script> 
+    
+</body>
+</html>
