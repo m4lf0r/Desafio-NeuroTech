@@ -28,7 +28,7 @@ Tempo de experiência;
 
 URL do LinkedIn.
 
-Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 # Backend
 
@@ -74,7 +74,7 @@ Modais: Para cadastro e edição de colaboradores.
 
 Cadastro de colaboradores com validação de campos obrigatórios.
 
-Listagem de todos os colaboradores ou com filtros definidos pelo usuário.
+Listagem de todos os colaboradores.
 
 Atualização de informações de um colaborador específico.
 
