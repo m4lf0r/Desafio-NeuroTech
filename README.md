@@ -38,7 +38,7 @@ Spring Boot 3.0
 
 Spring Data JPA para gerenciamento do banco de dados
 
-SQL
+MySQL
 
 # Frontend
 
